@@ -1,3 +1,6 @@
 /// @description  
 
-room_restart();
+color++;
+if (color >= 4) {
+	color = 0;
+}

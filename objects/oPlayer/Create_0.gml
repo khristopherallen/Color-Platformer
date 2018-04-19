@@ -8,4 +8,5 @@ gravity_ = 1;
 acceleration = 0.5;
 onGround = false;
 canJump = true;
+color = 0; // 0 = red, 1 = green, 2 = yellow, 3 = blue
 
