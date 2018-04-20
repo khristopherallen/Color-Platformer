@@ -21,6 +21,6 @@ switch (color) {
 	break;
 }
 
-if (place_meeting(x, y, colorObject)) {
+if (place_meeting(x, y, oSolidParent) && !place_meeting(x, y, colorObject)) {
 	oPlayer.dead = true;
 }

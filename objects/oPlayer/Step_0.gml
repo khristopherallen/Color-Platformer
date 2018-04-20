@@ -13,41 +13,45 @@ if (!place_meeting(x, y + 1, oSolidParent)){
 	onGround = true;
 }
 
-// jumping
-if (keyUp && onGround && canJump) {
-	speedV = -jumpHeight;
-}
+oPlayerBox.x = x;
+oPlayerBox.y = y;
 
-if (keyUp) {
-	canJump = false;
-} else {
-	canJump = true;
-}
-
-// acceleration
-speedH += inputH * acceleration;
-speedH = clamp(speedH, -maxSpeedH, maxSpeedH);
-if (inputH == 0 && onGround){
-	speedH = 0;
-} 
-
-// horizontal collisions
-if (place_meeting(x+speedH, y, oSolidParent)) {
-	speedH = 0;
-}
-
-// horizontal movement
-x += speedH;
-
-// vertical collisions
-if (place_meeting(x, y+speedV, oSolidParent)) {
-	while (!place_meeting(x, y+1, oSolidParent)) {
-		y++;
+if (!dead) {
+	// jumping
+	if (keyUp && onGround && canJump) {
+		speedV = -jumpHeight;
 	}
-	speedV = 0;
+
+	if (keyUp) {
+		canJump = false;
+	} else {
+		canJump = true;
+	}
+
+	// acceleration
+	speedH += inputH * acceleration;
+	speedH = clamp(speedH, -maxSpeedH, maxSpeedH);
+	if (inputH == 0 && onGround){
+		speedH = 0;
+	} 
+
+	// horizontal collisions
+	if (place_meeting(x+speedH, y, oSolidParent)) {
+		speedH = 0;
+	}
+
+	// horizontal movement
+	x += speedH;
+
+	// vertical collisions
+	if (place_meeting(x, y+speedV, oSolidParent)) {
+		while (!place_meeting(x, y+1, oSolidParent)) {
+			y++;
+		}
+		speedV = 0;
+	}
+
+	// vertical movement
+	y += speedV;
 }
-
-// vertical movement
-y += speedV;
-
 
