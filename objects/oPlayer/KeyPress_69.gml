@@ -1,6 +1,6 @@
 /// @description  
 
-color++;
-if (color >= 4) {
-	color = 0;
-}
+//color++;
+//if (color >= 4) {
+//	color = 0;
+//}

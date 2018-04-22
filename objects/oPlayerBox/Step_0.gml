@@ -5,22 +5,23 @@ color = oPlayer.color;
 switch (color) {
 	case 0:
 		//red
-		colorObject = oSolidRed;
+		colorObject = colorObjR;
 	break;
 	case 1:
 		//green
-		colorObject = oSolidGreen;
+		colorObject = colorObjG;
 	break;
 	case 2:
 		//yellow
-		colorObject = oSolidYellow;
+		colorObject = colorObjY;
 	break;
 	case 3:
 		//blue
-		colorObject = oSolidBlue;
+		colorObject = colorObjB;
 	break;
 }
 
-if (place_meeting(x, y, oSolidParent) && !place_meeting(x, y, colorObject)) {
-	oPlayer.dead = true;
-}
+//if (place_meeting(x, y, oSolidParent) && !place_meeting(x, y, colorObject)) {
+//	oPlayer.dead = true;
+//}
+

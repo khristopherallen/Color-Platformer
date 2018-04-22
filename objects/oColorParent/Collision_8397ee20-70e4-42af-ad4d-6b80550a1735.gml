@@ -1,0 +1,3 @@
+/// @description  
+
+oPlayer.color = type;
