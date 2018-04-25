@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oSolidYellow",
     "eventList": [
-        
+        {
+            "id": "c63cdcef-ae87-441c-82de-038b2de09075",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "e3de75ff-d886-442e-8247-cffc298a1f34",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "23d449ac-2154-44e4-ae03-3ec509b97f59"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

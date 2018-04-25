@@ -330,7 +330,7 @@
             "Key": "c32a8214-8f1c-4e03-acab-c124d8a478da",
             "Value": {
                 "id": "c39f998c-7797-4613-bc06-9e97fa9e9930",
-                "resourcePath": "objects\\oColorParent\\oColorParent.yy",
+                "resourcePath": "objects\\oCrystalParent\\oCrystalParent.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -2,7 +2,7 @@
     "id": "c32a8214-8f1c-4e03-acab-c124d8a478da",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oColorParent",
+    "name": "oCrystalParent",
     "eventList": [
         {
             "id": "8397ee20-70e4-42af-ad4d-6b80550a1735",

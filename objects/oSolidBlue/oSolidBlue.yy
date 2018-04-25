@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oSolidBlue",
     "eventList": [
-        
+        {
+            "id": "82cf0500-a3ee-4e5d-a240-98f879af158a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "e3de75ff-d886-442e-8247-cffc298a1f34",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "cc1ed96b-1ef6-462f-b2db-da7bf91ddca3"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

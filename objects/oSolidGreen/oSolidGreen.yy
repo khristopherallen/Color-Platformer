@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oSolidGreen",
     "eventList": [
-        
+        {
+            "id": "80567360-3c2a-4e40-b25e-5c2ee120b5a1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "e3de75ff-d886-442e-8247-cffc298a1f34",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "a7f928de-ef78-49f7-b8df-01e9a1c232e8"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
