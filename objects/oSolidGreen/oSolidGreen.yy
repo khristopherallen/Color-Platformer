@@ -5,7 +5,17 @@
     "name": "oSolidGreen",
     "eventList": [
         {
-            "id": "80567360-3c2a-4e40-b25e-5c2ee120b5a1",
+            "id": "3bf21f1c-7506-44d8-a972-8392b2ffbb96",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "a7f928de-ef78-49f7-b8df-01e9a1c232e8"
+        },
+        {
+            "id": "2440a7ac-aaeb-4d87-ac26-e499d250fe32",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

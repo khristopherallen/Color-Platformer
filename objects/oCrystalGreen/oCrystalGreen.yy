@@ -2,7 +2,7 @@
     "id": "d4e58ae6-99dc-4a1f-b19b-70610b4342a5",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oGreen",
+    "name": "oCrystalGreen",
     "eventList": [
         {
             "id": "db4f59d0-6820-4a0a-927e-60c89732b600",
@@ -23,10 +23,22 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "d4e58ae6-99dc-4a1f-b19b-70610b4342a5"
+        },
+        {
+            "id": "1a6fa306-3328-4596-8b7c-d09ed79f7839",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "d4e58ae6-99dc-4a1f-b19b-70610b4342a5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        
+    ],
     "parentObjectId": "c32a8214-8f1c-4e03-acab-c124d8a478da",
     "persistent": false,
     "physicsAngularDamping": 0.1,

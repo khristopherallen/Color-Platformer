@@ -13,6 +13,11 @@ if (!place_meeting(x, y + 1, oSolidParent)){
 	onGround = true;
 }
 
+// friction
+if (inputH == 0){
+	speedH += sign(speedH)*-1*acceleration;	
+}
+
 oPlayerBox.x = x;
 oPlayerBox.y = y;
 
@@ -45,8 +50,10 @@ if (!dead) {
 
 	// vertical collisions
 	if (place_meeting(x, y+speedV, oSolidParent)) {
-		while (!place_meeting(x, y+1, oSolidParent)) {
-			y++;
+		if (speedV > 0){
+			while (!place_meeting(x, y+1, oSolidParent)) {
+				y++;
+			}
 		}
 		speedV = 0;
 	}

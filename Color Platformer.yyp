@@ -66,7 +66,7 @@
             "Key": "20405bd7-7e41-491c-9469-6490fb540684",
             "Value": {
                 "id": "5fd8ba25-c0c2-4a53-8d49-195be9dccd97",
-                "resourcePath": "objects\\oYellow\\oYellow.yy",
+                "resourcePath": "objects\\oCrystalYellow\\oCrystalYellow.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "77521699-fefc-4352-88f0-de6bb4b431c0",
+            "Value": {
+                "id": "9cff6a5e-6686-463c-b075-4e59f648f818",
+                "resourcePath": "scripts\\createCrystal\\createCrystal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "77829381-2567-4bab-a88e-c8ce3becfa75",
             "Value": {
                 "id": "d0e1fa7b-48e1-4f80-8f39-0ec8a953a1bc",
@@ -314,7 +322,7 @@
             "Key": "baaf95fc-7437-4ffe-b92e-cdb2584f6baf",
             "Value": {
                 "id": "81399446-6cca-4537-a966-d4750e256e4c",
-                "resourcePath": "objects\\oRed\\oRed.yy",
+                "resourcePath": "objects\\oCrystalRed\\oCrystalRed.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -322,7 +330,7 @@
             "Key": "c3175d01-b65a-4073-9540-5e6ec4695da7",
             "Value": {
                 "id": "7b985f4b-0a48-4bbc-a8d1-973f7a410287",
-                "resourcePath": "objects\\oBlue\\oBlue.yy",
+                "resourcePath": "objects\\oCrystalBlue\\oCrystalBlue.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -351,14 +359,6 @@
             }
         },
         {
-            "Key": "cc1ed96b-1ef6-462f-b2db-da7bf91ddca3",
-            "Value": {
-                "id": "5ed92693-7253-4dd0-b4d6-2917cc9c6906",
-                "resourcePath": "objects\\oSolidBlue\\oSolidBlue.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "af61bf6b-1321-4189-a754-c9cabddad26b",
@@ -370,7 +370,15 @@
             "Key": "d4e58ae6-99dc-4a1f-b19b-70610b4342a5",
             "Value": {
                 "id": "a868be0c-f003-46c7-bb10-04f8b0f17340",
-                "resourcePath": "objects\\oGreen\\oGreen.yy",
+                "resourcePath": "objects\\oCrystalGreen\\oCrystalGreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dbc78792-645d-47d2-9768-23d38bafd7a8",
+            "Value": {
+                "id": "0c1b17f1-1b13-453f-8286-0bd57bf4ba8e",
+                "resourcePath": "objects\\oSolidBlue\\oSolidBlue.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -400,7 +408,7 @@
         }
     ],
     "script_order": [
-        
+        "77521699-fefc-4352-88f0-de6bb4b431c0"
     ],
     "tutorial": ""
 }

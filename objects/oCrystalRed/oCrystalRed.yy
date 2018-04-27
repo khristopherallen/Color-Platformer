@@ -2,7 +2,7 @@
     "id": "baaf95fc-7437-4ffe-b92e-cdb2584f6baf",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oRed",
+    "name": "oCrystalRed",
     "eventList": [
         {
             "id": "7aba5b29-4931-495c-be23-5afc6ff42594",
@@ -22,6 +22,16 @@
             "collisionObjectId": "e3de75ff-d886-442e-8247-cffc298a1f34",
             "enumb": 0,
             "eventtype": 4,
+            "m_owner": "baaf95fc-7437-4ffe-b92e-cdb2584f6baf"
+        },
+        {
+            "id": "4af45f8b-994b-4a6d-a91d-17e0da92407e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
             "m_owner": "baaf95fc-7437-4ffe-b92e-cdb2584f6baf"
         }
     ],
