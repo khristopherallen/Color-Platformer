@@ -2,7 +2,7 @@
     "id": "3770c51b-508e-4677-9965-4c87c6dc98dd",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oSolidParent",
+    "name": "oSolid",
     "eventList": [
         {
             "id": "3998df0a-73f9-4764-a60f-271582fd23a2",

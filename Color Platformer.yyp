@@ -106,7 +106,7 @@
             "Key": "3770c51b-508e-4677-9965-4c87c6dc98dd",
             "Value": {
                 "id": "d1dceb58-1af4-40f9-815e-1515b4cdab27",
-                "resourcePath": "objects\\oSolidParent\\oSolidParent.yy",
+                "resourcePath": "objects\\oSolid\\oSolid.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -306,7 +306,7 @@
             "Key": "9d5a20b4-655b-4287-bfd8-58a7ad76f90f",
             "Value": {
                 "id": "dc48215f-f463-44c8-84f3-dc56b43e93d2",
-                "resourcePath": "sprites\\sSolidParent\\sSolidParent.yy",
+                "resourcePath": "sprites\\sSolid\\sSolid.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -2,7 +2,7 @@
     "id": "9d5a20b4-655b-4287-bfd8-58a7ad76f90f",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sSolidParent",
+    "name": "sSolid",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -5,14 +5,6 @@ var keyLeft = keyboard_check(ord("A"));
 var keyUp = keyboard_check(vk_space);
 var inputH = (keyRight - keyLeft);
 
-// gravity
-if (!place_meeting(x, y + 1, oSolidParent)){
-	speedV += gravity_;
-	onGround = false;
-} else {
-	onGround = true;
-}
-
 // friction
 if (inputH == 0){
 	speedH += sign(speedH)*-1*acceleration;	
@@ -35,30 +27,61 @@ if (!dead) {
 
 	// acceleration
 	speedH += inputH * acceleration;
-	speedH = clamp(speedH, -maxSpeedH, maxSpeedH);
 	if (inputH == 0 && onGround){
 		speedH = 0;
 	} 
 
 	// horizontal collisions
-	if (place_meeting(x+speedH, y, oSolidParent)) {
+	if (place_meeting(x+speedH, y, oSolid)) {
 		speedH = 0;
 	}
-
-	// horizontal movement
-	x += speedH;
-
+	
+	// check if on wall
+	onWall = place_meeting(x+1, y, oSolid) - place_meeting(x-1, y, oSolid);
+	
+	// wall jump
+	if (onWall != 0 && !onGround && keyUp) {
+		speedH = -onWall*speedHWall;
+		speedV = speedVWall;
+	}
+	
+	// gravity 
+	if (!place_meeting(x, y + 1, oSolid)){
+		speedV += gravity_;
+		onGround = false;
+	} else {
+		onGround = true;
+	}
+	
 	// vertical collisions
-	if (place_meeting(x, y+speedV, oSolidParent)) {
+	if (place_meeting(x, y+speedV, oSolid)) {
 		if (speedV > 0){
-			while (!place_meeting(x, y+1, oSolidParent)) {
+			while (!place_meeting(x, y+1, oSolid)) {
 				y++;
 			}
 		}
 		speedV = 0;
 	}
+	
+	//// calculate vertical movement
+	//var finalGravity = gravity_;
+	//var finalMaxSpeedV = maxSpeedV;
+	//if (onWall != 0 && speedV > 0) {
+	//	finalGravity = gravityWall;
+	//	finalMaxSpeedV = maxSpeedVWall;
+	//}
 
-	// vertical movement
+	// current position status
+	if (onGround) {
+		jumpHeight = 7;
+	}
+	
+	// clamp speeds
+	speedH = clamp(speedH, -maxSpeedH, maxSpeedH);
+	speedV = clamp(speedV, -maxSpeedV, maxSpeedV);
+	
+	// movement
 	y += speedV;
+	x += speedH;
 }
 
