@@ -14,6 +14,17 @@ oPlayerBox.x = x;
 oPlayerBox.y = y;
 
 if (!dead) {
+	
+	//// calculate vertical movement
+	//var finalGravity = gravity_;
+	//var finalMaxSpeedV = maxSpeedV;
+	//if (onWall != 0 && speedV > 0) {
+	//	finalGravity = gravityWall;
+	//	finalMaxSpeedV = maxSpeedVWall;
+	//}
+	//speedV += finalGravity;
+	//speedV = clamp(speedV, -finalMaxSpeedV, finalMaxSpeedV);
+	
 	// jumping
 	if (keyUp && onGround && canJump) {
 		speedV = -jumpHeight;
@@ -33,17 +44,28 @@ if (!dead) {
 
 	// horizontal collisions
 	if (place_meeting(x+speedH, y, oSolid)) {
+		if (speedH > 0){
+			while (!place_meeting(x + sign(speedH), y, oSolid)) {
+				x += sign(speedH);
+			}
+		}
 		speedH = 0;
 	}
 	
 	// check if on wall
 	onWall = place_meeting(x+1, y, oSolid) - place_meeting(x-1, y, oSolid);
+	if (onWall && !onGround) {
+		var finalGravity = gravityWall;
+	} else {
+		var finalGravity = gravity_;
+	}
 	
 	// wall jump
 	if (onWall != 0 && !onGround && keyUp) {
 		speedH = -onWall*speedHWall;
 		speedV = speedVWall;
 	}
+	
 	
 	// gravity 
 	if (!place_meeting(x, y + 1, oSolid)){
@@ -63,14 +85,8 @@ if (!dead) {
 		speedV = 0;
 	}
 	
-	//// calculate vertical movement
-	//var finalGravity = gravity_;
-	//var finalMaxSpeedV = maxSpeedV;
-	//if (onWall != 0 && speedV > 0) {
-	//	finalGravity = gravityWall;
-	//	finalMaxSpeedV = maxSpeedVWall;
-	//}
-
+	// wall sliding
+	
 	// current position status
 	if (onGround) {
 		jumpHeight = 7;
