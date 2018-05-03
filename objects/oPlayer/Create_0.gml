@@ -2,15 +2,15 @@
 
 speedH = 0;
 speedV = 0;
-maxSpeedH = 4;
-maxSpeedV = 8;
-maxSpeedVWall = 8;
+maxSpeedH = 2;
+maxSpeedV = 5;
+maxSpeedVWall = 4;
 speedHWall = 6;
 speedVWall = -5;
-jumpHeight = 7;
-gravity_ = 1;
-gravityWall = 0.2;
-acceleration = 0.5;
+jumpHeight = 8;
+gravity_ = 0.5;
+gravityWall = 0.1;
+acceleration = 0.25;
 onGround = false;
 canJump = true;
 color = 0; // 0 = red, 1 = green, 2 = yellow, 3 = blue

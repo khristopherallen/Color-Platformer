@@ -2,7 +2,8 @@
 
 var keyRight = keyboard_check(ord("D"));
 var keyLeft = keyboard_check(ord("A"));
-var keyUp = keyboard_check(vk_space);
+var keyUp = keyboard_check(ord("W"));
+var keyJump = keyboard_check_pressed(vk_space);
 var inputH = (keyRight - keyLeft);
 
 // friction
@@ -26,11 +27,11 @@ if (!dead) {
 	//speedV = clamp(speedV, -finalMaxSpeedV, finalMaxSpeedV);
 	
 	// jumping
-	if (keyUp && onGround && canJump) {
+	if (keyJump && onGround && canJump) {
 		speedV = -jumpHeight;
 	}
 
-	if (keyUp) {
+	if (keyJump) {
 		canJump = false;
 	} else {
 		canJump = true;
@@ -61,7 +62,7 @@ if (!dead) {
 	}
 	
 	// wall jump
-	if (onWall != 0 && !onGround && keyUp) {
+	if (onWall != 0 && !onGround && keyJump) {
 		speedH = -onWall*speedHWall;
 		speedV = speedVWall;
 	}
@@ -69,7 +70,7 @@ if (!dead) {
 	
 	// gravity 
 	if (!place_meeting(x, y + 1, oSolid)){
-		speedV += gravity_;
+		speedV += finalGravity;
 		onGround = false;
 	} else {
 		onGround = true;
